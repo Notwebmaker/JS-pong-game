@@ -1,19 +1,2 @@
-# JS pong game
-
-Wanna feel the 70's vibes ? Simply run this peace of code in your favorite web browser. Enjoy !
-
-# How to play
-
-Left player :
-
-	- 'Z' key moves the paddle upside
-
-	- 'S' key moves the paddle downside
-
-
-Right player :
-
-	- 'UP Arrow' key moves the paddle upside
-
-	- 'DOWN Arrow' key moves the paddle downside
-
+Slighlty modified code of Tacktel's JS Pong game, not many changes, just that the keycode function for detcting keypresses has been replaced with the event.key function to ensure compatability with newer browsers			
+Also the left player has been changed from 'S'= down and "Z" (probably for the dvorak keyboard) == up to 'W'=up and 'S'=down... That's about it
