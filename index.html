@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Gamedev Canvas Workshop</title>
+    <title>Gamedev Canvas Workshop-modified by Notwebmaker</title>
     <style>
     	canvas {
          background: black;
@@ -46,31 +46,33 @@
   var rightScore = 0;
 
   function keyDownHandler(e) {
-      if(e.keyCode == 90) {
+    let control = e.key
+      if(control == 'w') {
           leftUpPressed = true;
       }
-      else if (e.keyCode == 83) {
+      else if (control == 's') {
           leftDownPressed = true;
       }
-      if (e.keyCode == 38) {
+      if (control == 'ArrowUp') {
         rightUpPressed = true;
       }
-      else if (e.keyCode == 40) {
+      else if (control == 'ArrowDown') {
         rightDownPressed = true;
       }
   }
 
   function keyUpHandler(e) {
-      if (e.keyCode == 90) {
+    let control = e.key
+      if (control == 'w') {
           leftUpPressed = false;
       }
-      else if (e.keyCode == 83) {
+      else if (control == "s") {
           leftDownPressed = false;
       }
-      if (e.keyCode == 38) {
+      if (control == 'ArrowUp') {
         rightUpPressed = false;
       }
-      else if (e.keyCode == 40) {
+      else if (control == 'ArrowDown') {
         rightDownPressed = false;
       }
   }
